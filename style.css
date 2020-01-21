@@ -13,6 +13,7 @@ body{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 1;
 }
 
 .header{
@@ -62,15 +63,19 @@ a{
 .grid-wrapper{
 	background: #5DADE2;
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .box{
 	padding: 50px;
-	margin: 10px;
+	margin: 15px 15px;
 	background-color: #E5E7E9;
 	border-radius: 10px;
+}
+
+.box:hover{
+	transform: rotate(-5deg);
 }
 
 .box > img{
@@ -91,6 +96,6 @@ a{
 		padding: 0;
 		text-align:center;
 	}
-	
+
 
 }
